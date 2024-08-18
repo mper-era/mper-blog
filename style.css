@@ -3,6 +3,11 @@ html {
     height: 100%;
 }
 
+:root {
+    --anim-color-1: linear-gradient(0deg, rgb(25, 5, 99) 0%, rgba(242,65,235,1) 85%);
+    --anim-color-2: rgba(242,65,235,1);
+}
+
 body {
     background-color: #222222;
     width: 100%;
@@ -17,19 +22,19 @@ h1, h3, p {
     margin: 0px;
 }
 
-h1 {font-size: 48px;}
+h1 {font-size: 3.3488372093vw;} /*48px*/
 
-h3 {font-size: 32px;}
+h3 {font-size: 1.67441860465vw;} /*24px*/
 
-p {font-size: 24px;}
+p {font-size: 1.39534883721vw; color: #adadad;} /*20px*/
 
 #dis_ca {
     width: 20%;
-    height: 50%;
+    height: 27.9069767442vw; /*400xpx*/
     position: relative;
     left: 10px;
     top: 100px;
-    border-radius: 10px;
+    border-radius: 0.697674418605vw; /*10px*/
     overflow: hidden;
 }
 
@@ -37,7 +42,7 @@ p {font-size: 24px;}
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0.697674418605vw; /*10px*/
     background: #000000;
 }
 
@@ -49,14 +54,16 @@ p {font-size: 24px;}
     margin: -20% 15%;
     border: 0px;
     background: rgb(10,0,43);
-    background: linear-gradient(0deg, rgb(25, 5, 99) 0%, rgba(242,65,235,1) 85%);
+    background: var(--anim-color-2);
 
-    animation: orbit 4s cubic-bezier(.39,0,.5,1) infinite;
+    transform-origin: bottom center;
+    animation: orbit 3s linear infinite; /* cubic-bezier(.39,0,.5,1) */
+    animation-delay: 0s;
 }
 
 @keyframes orbit {
-    to {transform: rotate(315deg)}
-    from {transform: rotate(-45deg)}
+    from {transform: translateY(-50%) rotate(0deg)}
+    to {transform: translateY(-50%) rotate(360deg)}
 }
 
 #dis_ca-ft {
@@ -64,8 +71,8 @@ p {font-size: 24px;}
     z-index: 2;
     margin: 2%;
     width: 96%;
-    height: 96%;
-    border-radius: 5px;
+    height: 97%;
+    border-radius: 0.348837209302vw; /*5px*/
     background: #323232;
 }
 
@@ -74,19 +81,24 @@ p {font-size: 24px;}
     z-index: 2;
     margin: 2%;
     width: 96%;
-    height: 48%;
-    border-radius: 5px;
+    height: 49%;
+    border-radius: 0.348837209302vw; /*5px*/
     background: #272626;
-    transform: translateY(100%);
+    transform: translateY(98%);
+    overflow: hidden;
 }
 
-#dis_ca-fimg {
+#dis_ca-fimgcont {
     position: absolute;
     z-index: 2;
     margin: 2%;
     width: 96%;
     height: 48%;
-    border-radius: 5px;
+    border-radius: 0.348837209302vw; /*5px*/
     background: #ffffff;
     overflow: hidden;
+}
+
+#dis_ca-fimg {
+    width: 100%;
 }
