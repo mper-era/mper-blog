@@ -1,7 +1,7 @@
-const fs = require('fs');
+const fs = require("fs");
  
-fs.readFile('test.txt', (err, data) => {
-  if (err) throw err;
- 
-  console.log(data.toString());
+fs.readFile("Posts/Content/test.txt", "utf8", (err, data) => {
+    if (err) throw err;
+    
+    data = data.toString();
 });
