@@ -29,7 +29,7 @@ h3 {font-size: 1.67441860465vw;} /*24px*/
 p {font-size: 1.39534883721vw; color: #adadad;} /*20px*/
 
 #dis_ca {
-    width: 20%;
+    width: 30%;
     height: 27.9069767442vw; /*400xpx*/
     position: relative;
     left: 10px;
@@ -71,7 +71,7 @@ p {font-size: 1.39534883721vw; color: #adadad;} /*20px*/
     z-index: 2;
     margin: 2%;
     width: 96%;
-    height: 97%;
+    height: 96%;
     border-radius: 0.348837209302vw; /*5px*/
     background: #323232;
 }
@@ -81,7 +81,7 @@ p {font-size: 1.39534883721vw; color: #adadad;} /*20px*/
     z-index: 2;
     margin: 2%;
     width: 96%;
-    height: 49%;
+    height: 48%;
     border-radius: 0.348837209302vw; /*5px*/
     background: #272626;
     transform: translateY(98%);
